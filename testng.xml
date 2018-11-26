@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1" >
+
+    <test name="MADE Login" >
+
+        <parameter name="sampleParamName" value="sampleParamValue"/>
+        <classes>
+            <class name="com.anthem.made.testng.MadeLoginTest" />
+
+            <class name="com.anthem.made.testng.MadeDisclaimerPageTest" />
+        </classes>
+
+    </test>
+
+    <test name="MADE Disclaimer">
+        <classes>
+            <class name="com.anthem.made.testng.MadeLogoutTest"/>
+        </classes>
+    </test>
+</suite>
